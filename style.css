@@ -1,0 +1,110 @@
+/* calculator.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #580554;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 50;
+}
+
+.calculator {
+    width: 350px;
+    padding: 30px;
+    border: 1px solid #4b1248;
+    border-radius: 5px;
+    background-color: #8c3294;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 90px;
+    justify-items: center;
+    align-items: center;
+}
+
+input[type="button"] {
+    width: 60px;
+    height: 50px;
+    margin: 2px;
+    border: 0.99px solid #c9960c;
+    border-radius: 5px;
+    background-color: #1b2283;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(204, 186, 24, 0.705);
+}
+
+input[type="button"]:hover {
+    background-color: #b3ca2f;
+    box-shadow: 0 4px 8px rgba(230, 247, 246, 0.3);
+}
+
+input[type="button"]:active {
+    transform: translateY(2px);
+    box-shadow: none;
+}
+
+input[type="text"] {
+    grid-column: span 3;
+    width: calc(100% - 0.100px);
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+    border: 1px solid #004277;
+    border-radius: 5px;
+    outline: none;
+}
+input[type="button"][value="="] {
+    width: 55px; 
+    height: 101px; 
+}
+input[type="button"][value="C"] {
+    width: 75px;
+    height: 64px;   
+}
+input[type="button"][value="+"]{
+    width: 55px;
+     height:100px;
+}
+input[type="button"][value="-"]{
+    width:50px;
+    height:50px;
+}
+input[type="button"][value="0"]{
+    width:58px;
+    height:50px;
+    position: relative;
+    overflow: hidden;   
+}
+input[type="button"][value="0"]::before {
+    content: '';
+    position: absolute;
+    width: 10%;
+    height: 5px; /* Adjust the height for the line on one side */
+    background-color: #1b2283; /* Same background color as the button */
+    top: 0;
+    right: 100;
+}
+
+input[type="text"] {
+    grid-column: span 3;
+    width: calc(101% - 20px);
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: right;
+    border: 1px solid #a6dc13;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+
+  
